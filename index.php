@@ -1,3 +1,16 @@
+<?php
+$dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
+
+$query = "SELECT * FROM `recipes`"; 
+$result = $dbc->query($query); 
+
+while($row = $result->fetch_assoc())
+{
+    print_r($row);
+}
+
+?>
+
 <html>
 
 <head>
@@ -45,6 +58,8 @@
     <div class="heading">
 	    <p>Homepage</p>
 	</div>
+
+    <img src="Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
 
     <p>Text</p>
 
