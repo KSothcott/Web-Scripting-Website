@@ -48,6 +48,12 @@ while($row = $result->fetch_assoc())
     background-color: #747875;
     }    
     
+    .image {
+        height: 200;
+        width: 200;
+
+    }
+
 </style>
 </head>
 
@@ -75,7 +81,7 @@ while($row = $result->fetch_assoc())
 
     $image_address = $row['Image'];
 
-    echo '<img src="'.$image_address.'" alt="Burger" width="200" height="200" />'
+    echo '<img src="'.$image_address.'" alt="Burger" class="image"/>'
 
 ?>
 
