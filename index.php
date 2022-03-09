@@ -1,7 +1,9 @@
 <?php
+
 $dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
 
 $query = "SELECT * FROM `recipes`"; 
+
 $result = $dbc->query($query); 
 
 while($row = $result->fetch_assoc())
@@ -62,6 +64,21 @@ while($row = $result->fetch_assoc())
     <img src="Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
 
     <p>Text</p>
+
+<?php
+
+    $query = ' SELECT `Image` FROM `recipes` WHERE  `RecipeID` = "2"';
+
+    $result = $dbc->query($query);
+
+    $row = $result->fetch_assoc();
+
+    $image_address = $row['Image'];
+
+    echo '<img src="'.$image_address.'" alt="Burger" width="200" height="200" />'
+
+?>
+
 
 </body>
 
