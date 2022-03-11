@@ -77,10 +77,10 @@
 	    <p>Homepage</p>
 	</div>
 
-    <!--<img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>-->
+    <img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>
 
     <p>Text</p>
-    <br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     
 <?php
