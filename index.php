@@ -1,15 +1,15 @@
 <?php
 
-$dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
+//$dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
 
-$query = "SELECT * FROM `recipes`"; 
+//$query = "SELECT * FROM `recipes`"; 
 
-$result = $dbc->query($query); 
+//$result = $dbc->query($query); 
 
-while($row = $result->fetch_assoc())
-{
-    print_r($row);
-}
+//while($row = $result->fetch_assoc())
+//{
+    //print_r($row);
+//}
 
 ?>
 
@@ -67,21 +67,44 @@ while($row = $result->fetch_assoc())
 	    <p>Homepage</p>
 	</div>
 
-    <img src="Logo.png" style="float: right;width: 300px;height: 300px;padding-right: 50px;"/>
+    <img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>
 
     <p>Text</p>
+    <br />
 
+    
 <?php
+    $dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
+    
+    $query = ' SELECT Image, RecipeName, Price FROM `recipes` ';
 
-    $query = ' SELECT `Image` FROM `recipes` WHERE  `RecipeID` = "2"';
+    //$result = $dbc->query($query);
+    $r = mysqli_query($dbc,$query);
+    
+    if ($r)
+    {   
+        while($row = mysqli_fetch_array($r,MYSQLI_ASSOC))
+        {
+            echo '<br />' . $row['RecipeName'] . "_____" . $row['Price'];
+        }
+    }
 
-    $result = $dbc->query($query);
-
-    $row = $result->fetch_assoc();
+    //$row = $result->fetch_assoc();
 
     $image_address = $row['Image'];
+    $recipe_name = $row['RecipeName'];
+    $price = $row['Price'];
 
-    echo '<img src="'.$image_address.'" alt="Burger" class="image"/>'
+    //echo '<img src="'.$image_address.'" alt="Baklava" class="image"/>'
+    
+    
+    
+    //<tr>
+        //<td align="left" width="33%">' SELECT `Image` FROM `recipes` WHERE  `RecipeID` = "2"'</td>
+        //<td align="center" width="33%">#</td>
+        //<td align="right" width="33%">#</td>
+    //</tr>';
+
 
 ?>
 
