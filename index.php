@@ -49,10 +49,20 @@
     }    
     
     .image {
-        height: 200;
-        width: 200;
+        height: 200px;
+        width: 200px;
+        padding: 50px;
+        
+    }
+
+    .name {
+        font-family: verdana;
+        float: center;
+        font-size: 18px;
+        
 
     }
+    
 
 </style>
 </head>
@@ -67,7 +77,7 @@
 	    <p>Homepage</p>
 	</div>
 
-    <img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>
+    <!--<img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>-->
 
     <p>Text</p>
     <br />
@@ -76,16 +86,21 @@
 <?php
     $dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
     
-    $query = ' SELECT Image, RecipeName, Price FROM `recipes` ';
+    $query = ' SELECT * FROM `recipes` ';
 
     //$result = $dbc->query($query);
-    $r = mysqli_query($dbc,$query);
+    $result = mysqli_query($dbc,$query);
     
-    if ($r)
+    if ($result)
     {   
-        while($row = mysqli_fetch_array($r,MYSQLI_ASSOC))
+        while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
         {
-            echo '<br />' . $row['RecipeName'] . "_____" . $row['Price'];
+            $image_address = $row['Image'];
+            $recipe_name = $row['RecipeName'];
+            $price = $row['Price'];
+                        
+            echo '<a href = "detail.php"><img src="'.$image_address.'" class="image" />';
+            //echo '<a href = "detail.php".$recipe_name>';
         }
     }
 
@@ -95,7 +110,7 @@
     $recipe_name = $row['RecipeName'];
     $price = $row['Price'];
 
-    //echo '<img src="'.$image_address.'" alt="Baklava" class="image"/>'
+    //echo '<img src="'.$image_address.'" class="image"/>'
     
     
     
