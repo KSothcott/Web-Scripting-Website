@@ -94,17 +94,22 @@
     
     if ($result)
     {   
+        echo '<table style="width: 100%;"><tr>';
+        $sounter=0;
         while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
         {
-            $image_address = $row['Image'];
+            $image_address = '<img src="'.$row['Image'].'" width="200" height="0200" />';
             $recipe_name = $row['RecipeName'];
-            $price = $row['Price'];
-                        
-            echo '<a href = "detail.php"><img src="'.$image_address.'" class="image" />';
-            echo $recipe_name;
-            echo " ";
-            echo $price;
+            $price = '&pound;'.$row['Price']/100;
+            If($counter++ == 2 )  { echo '</tr><tr>'; $counter=0;}                      
+      //      echo '<a href = "detail.php"><img src="'.$image_address.'" class="image" />';
+        //    echo $recipe_name;
+      //      echo " ";
+        //    echo $price;
+        
+        echo '<td>'.$image_address.'<br />'.$recipe_name.'<br />'.$price.'</td>';
         }
+        echo '</tr></table>';
     }
 
     //$row = $result->fetch_assoc();
