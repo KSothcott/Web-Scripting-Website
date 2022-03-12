@@ -80,7 +80,7 @@
 
     <img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>
 
-    <p style="padding-left: 50px;">Text</p>
+    <p style="padding-left: 50px;">Welcome to Recipes for You. <br /> <br /> Please choose from our selection of recipes below for more details.</p>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     
