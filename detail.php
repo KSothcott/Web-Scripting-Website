@@ -39,7 +39,7 @@
 <body style="background-color: #F5ECEB; font-family: verdana;">
 
     <div class="icon-bar">
-        <a href="http://localhost/Web-Scripting-Website/" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
+        <a href="http://localhost:8080/Web-Scripting-Website/" style="font-size: 47px;"><i class="fa fa-home"></i></a> 
     </div>
 
     <div class="heading">

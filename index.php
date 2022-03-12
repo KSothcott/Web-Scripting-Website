@@ -16,7 +16,7 @@
 <html>
 
 <head>
-    <title>Homepage</title>
+    <title>Recipes for You</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
@@ -39,6 +39,7 @@
         float: left;
         text-align: center;
         padding: 12px;
+        padding-left: 50px;
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
@@ -74,12 +75,12 @@
     </div>
 
     <div class="heading">
-	    <p>Homepage</p>
+	    <p>Recipes for You</p>
 	</div>
 
     <img src="Logo.png" style="float: right;width: 200px;height: 200px;padding-right: 50px;"/>
 
-    <p>Text</p>
+    <p style="padding-left: 50px;">Text</p>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     
@@ -100,7 +101,9 @@
             $price = $row['Price'];
                         
             echo '<a href = "detail.php"><img src="'.$image_address.'" class="image" />';
-            //echo '<a href = "detail.php".$recipe_name>';
+            echo $recipe_name;
+            echo " ";
+            echo $price;
         }
     }
 
