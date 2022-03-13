@@ -46,7 +46,24 @@
 	    <p>Recipe Details</p>
 	</div>
 
-    <p>Text</p>
+    
+    
+<?php
+$id = $_GET['id']; echo 'ID = '.$id;
+if (isset($_REQUEST))
+    {
+        //$ID = $_REQUEST['RecipeID'];
+        
+        $dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
+        
+        //$query = ' SELECT * FROM `recipes` WHERE RecipeID=$ID';
+        
+        //$result = mysqli_query($dbc,$query);
+        
+        //$image_address = '<img src="'.$row['Image'].'" width="200" height="200" />';
+        
+    }
+?>
 
 </body>
 

@@ -91,10 +91,12 @@
         $counter=0;
         while($row = mysqli_fetch_array($result,MYSQLI_ASSOC))
         {
-            $image_address = '<img src="'.$row['Image'].'" width="200" height="0200" />';
+            $image_address = '<img src="'.$row['Image'].'" width="200" height="200" onclick="window.location.href='."' detail.php?id=".$row['RecipeID']."'".'" />';
             $recipe_name = $row['RecipeName'];
             $price = '&pound;'.$row['Price']/100;
-            If($counter >=3)
+            $recipe_id = $row['RecipeID'];
+            
+            if($counter >=3)
                 { echo '</tr><tr>'; $counter=1;}     
                 else $counter++;                 
 
@@ -104,9 +106,7 @@
         echo '</tr></table>';
     }
 
-    $image_address = $row['Image'];
-    $recipe_name = $row['RecipeName'];
-    $price = $row['Price'];
+
 
 
 ?>
