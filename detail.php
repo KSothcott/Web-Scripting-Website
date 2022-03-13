@@ -49,18 +49,20 @@
     
     
 <?php
-$id = $_GET['id']; echo 'ID = '.$id;
-if (isset($_REQUEST))
-    {
-        //$ID = $_REQUEST['RecipeID'];
-        
+$id = $_GET['id']; 
+if (isset($_GET['id']))
+    {        
         $dbc = mysqli_connect( 'localhost' , 'root' , 'root' , 'products' );
         
-        //$query = ' SELECT * FROM `recipes` WHERE RecipeID=$ID';
+        $query = ' SELECT * FROM `recipes` WHERE `RecipeID`='.$id; 
         
-        //$result = mysqli_query($dbc,$query);
+        $result = mysqli_query($dbc,$query);
         
-        //$image_address = '<img src="'.$row['Image'].'" width="200" height="200" />';
+        $row= mysqli_fetch_array($result,MYSQLI_ASSOC);
+        
+        $image_address = '<img src="'.$row['Image'].'" width="500" height="500" />';
+        
+        echo '<center>'.$image_address.'</center>';
         
     }
 ?>
