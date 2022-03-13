@@ -45,7 +45,13 @@
         border-color: #509D8A; 
     }
     
-
+    .description {
+        float: right;
+		font-size: 20px;
+		margin: 50px;
+		text-align: center;
+        font-family: verdana;
+    }
     
 </style>
 </head>
@@ -77,6 +83,18 @@ if (isset($_GET['id']))
         $image_address = '<img src="'.$row['Image'].'" class="image" />';
         
         echo $image_address;
+        
+        $name = $row['RecipeName'];
+        
+        echo $name;
+        
+        $description = $row['Description'];
+        
+        echo $description;
+        
+        $price = $row['Price'];
+        
+        echo $price;
         
     }
 ?>
