@@ -92,7 +92,7 @@ if (isset($_GET['id']))
         
         echo $description;
         
-        $price = $row['Price'];
+        $price = '&pound;'.$row['Price']/100;
         
         echo $price;
         
