@@ -39,7 +39,7 @@
         float: left;
         text-align: center;
         padding: 12px;
-        padding-left: 50px;
+        margin-left: 50px;
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
@@ -50,12 +50,23 @@
     }    
     
     .table {
-        width: 100%;
+        width: 83%;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 20px;
         padding-top: 20px;
         cursor: pointer; 
+    }
+    
+    .border {
+        border: 3px;
+        border-color: #509D8A;
+        border-style: solid;
+        border-radius: 5px;
+        width: 33%;
+        text-align: center;
+        padding: 5px;
+        
     }
     
     
@@ -98,11 +109,12 @@
             $recipe_id = $row['RecipeID'];
             
             if($counter >=3)
-                { echo '</tr><tr>'; $counter=1;}     
+                { echo '</tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>'; $counter=1;}     
                 else $counter++;                 
 
         
-        echo '<td>'.$image_address.'<br />'.$recipe_name.'<br />'.$price.'</td>';
+        echo '<td class="border">'.$image_address.'<br />'.$recipe_name.'<br />'.$price.'<br /></td>';
+        echo '<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>';
         }
         echo '</tr></table>';
     }

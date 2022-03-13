@@ -24,7 +24,7 @@
         float: left;
         text-align: center;
         padding: 12px;
-        padding-left: 50px;
+        margin-left: 50px;
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
