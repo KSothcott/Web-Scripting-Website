@@ -45,12 +45,22 @@
         border-color: #509D8A; 
     }
     
-    .description {
-        float: right;
-		font-size: 20px;
-		margin: 50px;
+
+    #name {
+        float: left;
+		font-size: 24px;
 		text-align: center;
         font-family: verdana;
+        width: 50%;
+        text-decoration: underline;
+    }
+    
+    #description {
+        float: left;
+		font-size: 20px;
+		text-align: center;
+        font-family: verdana;
+        width: 50%;
     }
     
 </style>
@@ -84,17 +94,27 @@ if (isset($_GET['id']))
         
         echo $image_address;
         
+        echo "<br />";
+        echo "<br />";
+        echo "<br />";
+        echo "<br />";
+        echo "<br />";
+        
         $name = $row['RecipeName'];
         
-        echo $name;
+        echo '<p id="name">'.$name.'</p>';
+        
+        echo "<br />";
         
         $description = $row['Description'];
         
-        echo $description;
+        echo '<p id="description">'.$description.'</p>';
+        
+        echo "<br />";
         
         $price = '&pound;'.$row['Price']/100;
         
-        echo $price;
+        echo '<p id="description">'.$price.'</p>';
         
     }
 ?>

@@ -62,7 +62,7 @@
         border: 3px;
         border-color: #509D8A;
         border-style: solid;
-        border-radius: 5px;
+        border-radius: 20px;
         width: 33%;
         text-align: center;
         padding: 5px;
