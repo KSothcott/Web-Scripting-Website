@@ -52,11 +52,12 @@
     .table {
         width: 100%;
         padding-left: 50px;
-        
+        padding-right: 50px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        cursor: pointer; 
     }
-
-
-    }
+    
     
 
 </style>

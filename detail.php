@@ -24,6 +24,7 @@
         float: left;
         text-align: center;
         padding: 12px;
+        padding-left: 50px;
         transition: all 0.3s ease;
         color: white;
         font-size: 36px;
@@ -32,6 +33,19 @@
     .icon-bar a:hover {
     background-color: #747875;
     }
+    
+    .image {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin: 50px;
+        padding: 10px;
+        border: 5px;
+        border-style: solid;
+        border-color: #509D8A; 
+    }
+    
+
     
 </style>
 </head>
@@ -60,9 +74,9 @@ if (isset($_GET['id']))
         
         $row= mysqli_fetch_array($result,MYSQLI_ASSOC);
         
-        $image_address = '<img src="'.$row['Image'].'" width="500" height="500" />';
+        $image_address = '<img src="'.$row['Image'].'" class="image" />';
         
-        echo '<center>'.$image_address.'</center>';
+        echo $image_address;
         
     }
 ?>
