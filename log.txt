@@ -1,0 +1,153 @@
+commit 47865f5ada51d9081e6fe5c903475e87bba10972
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 23:09:16 2022 +0000
+
+    Used CSS to style recipe name, description and price
+
+commit 5fc2ba64e6bc90c274bf51beb40dd64403ef4bac
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 22:26:17 2022 +0000
+
+    Added border to each recipe
+
+commit 6a585d8dc9daa96972af7eba04f95d897dc0ee9b
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 20:59:05 2022 +0000
+
+    To display price properly, added £ sign, and divided price by 100
+
+commit 4856f1b7b8979b75988c59ea213e22b1b5cf4254
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 20:58:02 2022 +0000
+
+    Added recipe name, description and price to detail.php
+
+commit 1b5eec6e0abca8d9fe8cc2d6751f2002dbbb41cc
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 20:54:14 2022 +0000
+
+    Improved <style> on both pages
+    
+    Changed cursor to pointer and added padding on index.php
+    
+    Added margin to home icon, created class .image to position the image and add a border on detail.php
+
+commit c35c7f412df5477ac450a588be9e130d429d8c21
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 20:29:54 2022 +0000
+
+    Made image display on detail.php according to recipe clicked on index.php
+
+commit e518223601fb3963b6dc5eac1f02b183a8a7e480
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sun Mar 13 19:48:43 2022 +0000
+
+    Used $_GET to transfer the recipe ID to detail.php when clicked
+
+commit bf3a4fd0d462b7fbe3d977909ed0c7ad7370d6f2
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 12 20:26:42 2022 +0000
+
+    Improved page layout
+    
+    Fixed table alignment, moved logo
+
+commit 20d280ea8986e02e400ef9e808768a411dfe319b
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 12 20:00:08 2022 +0000
+
+    Moved images and text into table, and displayed prices in pounds
+
+commit f024be07f7ed9fe89595eb80518a39bd86bb157d
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 12 12:52:12 2022 +0000
+
+    Added text on home page
+
+commit 14a80b4c4954cc706ea3b845445a39ce064e21d3
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 12 12:48:52 2022 +0000
+
+    Echoed recipe name and price; changed page heading
+
+commit b9881bba34848024f1361c89f788c1ebddcde14a
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Fri Mar 11 22:48:58 2022 +0000
+
+    Rearranged logo
+
+commit c3f0e60ed898f92981d457db94bc18a881baf921
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Fri Mar 11 22:47:13 2022 +0000
+
+    Displaying images, equally spaced, that all link to detail.php
+
+commit b68ba8ac1dab0d6288a1e903229a6bff060a69bb
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Fri Mar 11 20:10:36 2022 +0000
+
+    Displayed recipe names and prices as a list
+
+commit 9bfa90f7e0134090886d376d6a38d014705ec17d
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Wed Mar 9 13:19:13 2022 +0000
+
+    Created CSS class to display the images
+
+commit 8793d1a92bf731a49d2564126b8b50c5a401af87
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Wed Mar 9 13:12:49 2022 +0000
+
+    Tested loading image from database
+    
+    Entered the image path in the database, then checked it was correct by displaying the image on the webpage
+
+commit 298d953bc8121195d77a71f278f1636d2f88d33a
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Wed Mar 9 13:09:33 2022 +0000
+
+    Updated file names
+    
+    Made the file names simpler to enter in the database
+
+commit 74d653fdbd2a826fb4561f91b48d3ff00b5d753d
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Mon Mar 7 21:32:19 2022 +0000
+
+    Connected homepage to database
+
+commit 4fc87629570d9c36c6022f7467dbf6635a986200
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Mon Mar 7 21:31:43 2022 +0000
+
+    Added recipe photos and pdfs to htdocs folder
+
+commit 0e8982c9dd0fb1dded5e76646a8c71b1c29fbfed
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 5 13:26:33 2022 +0000
+
+    Added icon bar to detail.php; made home button functional, added hover effects
+
+commit b7181d7bd60079f0297805da198c06b84673e2f1
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 5 13:20:20 2022 +0000
+
+    Made icon bar on index.php
+
+commit 1075f6d2875690979eea416e4a7ce2488a664357
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Sat Mar 5 13:01:08 2022 +0000
+
+    Set up heading and body styles
+
+commit ebb82a7a09bd5091929b8c6aae4ef0f85bd09598
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Fri Mar 4 13:29:45 2022 +0000
+
+    Created index.php and detail.php
+
+commit 80b9d6fc3aecee90e2b527047a459780f6c31f38
+Author: KSothcott <80410150+KSothcott@users.noreply.github.com>
+Date:   Fri Mar 4 13:21:53 2022 +0000
+
+    Initial commit
